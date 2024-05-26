@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* HEADER BÖLÜMÜ */
+.header {
+  background-color: rgb(97, 95, 95, 0.514);
+  display: flex;
+  height: 110px;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header .logo h1 {
+  color: aquamarine;
+}
+.header .logo h1 i {
+  color: #fff;
+}
+.header .logo h1 span {
+  color: black;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: aquamarine;
+  font-size: 25px;
+  margin-right: 20px;
+  transition: all 0.3s;
+}
+.navbar ul li a:hover {
+  color: black;
+  cursor: pointer;
+}
+/* MAİN BÖLÜMÜ */
+.main {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .info {
+  height: 100%;
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .info h1 {
+  color: rgb(207, 100, 23);
+}
+.main .info p {
+  color: gray;
+}
+.main .info p b {
+  color: aquamarine;
+}
+.main .info button {
+  border: none;
+  background-color: aquamarine;
+  padding: 10px;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 3px;
+}
+.main .info button:hover {
+  background-color: rgb(8, 173, 118);
+  cursor: pointer;
+}
+/* TABLE BÖLGESİ */
+.table-container {
+  width: 80%;
+  margin: 20px auto;
+}
+.table-container table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+tr td {
+  padding: 8px;
+  border: 1px solid rgb(70, 70, 70);
+  color: #fff;
+  transition: all 0.5s;
+}
+td:hover {
+  background: url(./image.jpg);
+  cursor: pointer;
+}
+.table-container tr th {
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+/* FORM BÖLÜMÜ */
+.form-container {
+  width: 80%;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  margin-top: 100px;
+  background-color: #828282;
+  opacity: 0.7;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+#name {
+  height: 25px;
+  width: 98%;
+  margin: 10px;
+}
+#email {
+  width: 98%;
+  height: 25px;
+  margin: 10px;
+}
+#message {
+  width: 98%;
+  margin: 10px;
+  height: auto;
+  padding: 30px;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.btn-container .btn:hover {
+  color: #fff;
+  background: url(./image.jpg);
+}
+.btn {
+  background-color: rgb(18, 40, 55);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+/* FOOTER BÖLÜMÜ */
+.footer {
+  background-color: #333;
+  height: 110px;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
